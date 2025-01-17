@@ -1,0 +1,40 @@
+/* full width of screen */
+.moduleWrapper {
+    border-bottom: 1px solid var(--25per-blue1000);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    position: sticky;
+    z-index: var(--zindex-header);
+}
+
+/* width of max container*/
+.contentWrapper {
+    width: 1440px;
+}
+
+.content {
+    padding: var(--space-24);
+    height: calc(90px - var(--space-24) - var(--space-24));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoWrapper {
+    width: 140px;
+}
+
+.menuWrapper {
+    display: flex;
+    gap: var(--space-24);
+}
+
+.buttonsWrapper {
+    width: 140px;
+    display: flex;
+    gap: var(--space-16);
+}

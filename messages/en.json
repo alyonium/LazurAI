@@ -1,6 +1,20 @@
 {
   "header": {
-    "name": "LazurAI"
+    "name": "LazurAI",
+    "gettingStarted": "Getting started",
+    "models": "Models",
+    "features": "Features",
+    "pricing": "Pricing",
+    "currency": "Currency",
+    "seenOn": "Seen on",
+    "contacts": "Contacts",
+    "button": "Log In"
+  },
+  "main": {
+    "button": "Try it now",
+    "oneSubscription": "One subscription,",
+    "endlessPossibilities": "Endless possibilities",
+    "getAllAiTools": "Get all the AI tools you need and <bold>save over $600</bold> every year."
   },
   "Metadata": {
     "title": "LazurAI",

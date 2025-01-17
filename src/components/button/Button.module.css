@@ -1,0 +1,32 @@
+.wrapper {
+    cursor: pointer;
+    background-image: var(--button-gradient);
+    transition: var(--base-transition);
+    text-align: center;
+    background-size: 200% auto;
+    color: white;
+}
+
+.lg {
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-16) var(--space-32);
+    max-width: calc(180px - (2 * var(--space-32)));
+}
+
+.md {
+    border-radius: var(--border-radius-lg);
+}
+
+.sm {
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-10) var(--space-20);
+    max-width: calc(180px - (2 * var(--space-32)));
+}
+
+.wrapper:hover {
+    background-position: right center;
+}
+
+.wrapper:active {
+    transform: scale(.95);
+}

@@ -1,0 +1,76 @@
+.cardWrapper {
+    display: flex;
+    position: relative;
+}
+
+/* something wrong with height & width here*/
+.imageWrapper {
+    border-radius: var(--border-radius-circle);
+    background: white;
+    box-shadow: 0 0 13px var(--25per-blue1000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.blueImageWrapper {
+    min-width: 65px;
+    height: 65px;
+    left: 32px;
+    top: 10px;
+}
+
+.whiteImageWrapper {
+    min-width: 50px;
+    height: 50px;
+    left: 23px;
+    top: 10px;
+}
+
+.transparentImageWrapper {
+    min-width: 50px;
+    height: 50px;
+    left: 23px;
+    top: 10px;
+    opacity: 0.75;
+}
+
+.image {
+    width: 36px;
+    height: 36px;
+}
+
+.textWrapper {
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blueTextWrapper {
+    background: var(--blue1000);
+    box-shadow: 0 0 16px var(--25per-blue1000);
+    padding: var(--space-32) var(--space-36);
+    /* actual (width/height) minus (right and left padding/top and bottom padding) */
+    height: calc(90px - var(--space-32) - var(--space-32));
+    width: calc(280px - var(--space-36) - var(--space-36));
+}
+
+.whiteTextWrapper {
+    background: white;
+    padding: var(--space-16) var(--space-32);
+    box-shadow: 0 0 20px var(--25per-black);
+    /* actual (width/height) minus (right and left padding/top and bottom padding) */
+    height: calc(70px - var(--space-16) - var(--space-16));
+    width: calc(180px - var(--space-32) - var(--space-32));
+}
+
+.transparentTextWrapper {
+    background: var(--blue400);
+    padding: var(--space-16) var(--space-32);
+    /* actual (width/height) minus (right and left padding/top and bottom padding) */
+    height: calc(70px - var(--space-16) - var(--space-16));
+    width: calc(218px - var(--space-32) - var(--space-32));
+}

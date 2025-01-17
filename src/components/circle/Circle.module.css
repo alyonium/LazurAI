@@ -1,0 +1,117 @@
+.void {
+    z-index: var(--zindex-circles);
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    position: relative;
+    aspect-ratio: 1 / 1;
+}
+
+/*.cardList:hover * {*/
+/*    animation-play-state: paused;*/
+/*}*/
+
+.cardList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    z-index: 1;
+}
+
+.cardList .cardWrapper {
+    position: absolute;
+    top: 50%;
+    /*transform: translateY(-50%);*/
+    width: 100%;
+    animation: rotateCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
+}
+
+.lastCircle {
+    position: absolute;
+    width: 660px;
+    height: 660px;
+    aspect-ratio: 1 / 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: var(--circle-box-shadow);
+    border-radius: 50%;
+}
+
+.lastCircleShadow {
+    position: absolute;
+    width: 660px;
+    height: 660px;
+    aspect-ratio: 1 / 1;
+    left: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--blue1000) 50%, rgba(0, 0, 255, 0) 100%);
+    filter: blur(300px);
+}
+
+.secondCircle {
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    aspect-ratio: 1 / 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: var(--circle-box-shadow);
+    border-radius: 50%;
+}
+
+/* closer o further cards to center*/
+.card {
+    width: 300px;
+    animation: rotateCCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
+}
+
+.cardWrapper:nth-child(2), .cardWrapper:nth-child(2) .card {
+    animation-delay: calc((var(--rotate-speed)/var(--count)) * -1s);
+}
+.cardWrapper:nth-child(3), .cardWrapper:nth-child(3) .card {
+    animation-delay: calc((var(--rotate-speed)/var(--count)) * -2s);
+}
+.cardWrapper:nth-child(4), .cardWrapper:nth-child(4) .card {
+    animation-delay: calc((var(--rotate-speed)/var(--count)) * -3s);
+}
+.cardWrapper:nth-child(5), .cardWrapper:nth-child(5) .card {
+    animation-delay: calc((var(--rotate-speed)/var(--count)) * -4s);
+}
+.cardWrapper:nth-child(6), .cardWrapper:nth-child(6) .card {
+    animation-delay: calc((var(--rotate-speed)/var(--count)) * -5s);
+}
+.cardWrapper:nth-child(7), .cardWrapper:nth-child(7) .card {
+    animation-delay: calc((var(--rotate-speed)/var(--count)) * -6s);
+}
+.cardWrapper:nth-child(8), .cardWrapper:nth-child(8) .card {
+    animation-delay: calc((var(--rotate-speed)/var(--count)) * -7s);
+}
+
+
+@keyframes rotateCW {
+    from {
+        transform: translate3d(0px, -50%, -1px) rotate(-45deg);
+    }
+    to {
+        transform: translate3d(0px, -50%, 0px) rotate(-315deg);
+    }
+}
+
+/* hold items in horizontal position (without it keyframe, items looks like гsn ray in child drawing)*/
+@keyframes rotateCCW {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(315deg);
+    }
+}
