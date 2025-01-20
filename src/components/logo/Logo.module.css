@@ -1,7 +1,8 @@
 .wrapper {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     gap: var(--space-10);
 }
 
@@ -12,4 +13,20 @@
 .logo {
     width: 28px;
     height: auto;
+}
+
+/* MD */
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .logo {
+        width: 24px;
+    }
+}
+
+
+/* SM */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .logo {
+        width: 24px;
+    }
+
 }

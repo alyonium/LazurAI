@@ -24,7 +24,7 @@ const Main = () => {
   const t = useTranslations('main');
 
   return (
-    <div className='module-wrapper'>
+    <div className={classNames('module-wrapper', styles.moduleWrapper)}>
       <Background />
 
       <div className={classNames('content-wrapper', styles.contentWrapper)}>

@@ -1,0 +1,49 @@
+.wrapper {
+
+}
+
+.select {
+    text-transform: uppercase;
+    padding: var(--space-10);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 0 13px var(--25per-blue1000);
+    cursor: pointer;
+    transition: var(--base-transition);
+}
+
+.select:hover {
+    background: var(--blue1000);
+    color: var(--white);
+}
+
+.optionsList {
+    list-style: none;
+    position: absolute;
+    padding: var(--space-10);
+    text-transform: uppercase;
+    background: var(--white);
+    box-shadow: 0 0 13px var(--25per-blue1000);
+    border-radius: var(--border-radius-lg);
+    z-index: var(--zindex-header);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+}
+
+.selectedOption {
+
+}
+
+.option {
+
+}
+
+.option:hover {
+    cursor: pointer;
+    color: var(--blue1000);
+}
+
+/* SM */
+@media (max-width: 1023px) and (min-width: 768px) {
+
+}

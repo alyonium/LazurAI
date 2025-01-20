@@ -5,6 +5,7 @@
     margin: auto;
     position: relative;
     aspect-ratio: 1 / 1;
+    height: calc(100vh - var(--header-height));
 }
 
 /*.cardList:hover * {*/
@@ -15,7 +16,6 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: relative;
     width: 100%;
     aspect-ratio: 1 / 1;
     z-index: 1;
@@ -24,7 +24,6 @@
 .cardList .cardWrapper {
     position: absolute;
     top: 50%;
-    /*transform: translateY(-50%);*/
     width: 100%;
     animation: rotateCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
@@ -68,7 +67,7 @@
     border-radius: 50%;
 }
 
-/* closer o further cards to center*/
+/* closer o further cards to center in LG resolution */
 .card {
     width: 300px;
     animation: rotateCCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
@@ -113,5 +112,33 @@
     }
     to {
         transform: rotate(315deg);
+    }
+}
+
+/* SM */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .lastCircle {
+        width: 640px;
+        height: 640px;
+    }
+
+    .lastCircleShadow {
+        width: 640px;
+        height: 640px;
+    }
+
+    .secondCircle {
+        width: 420px;
+        height: 420px;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cardWrapper {
+        min-width: 890px;
     }
 }

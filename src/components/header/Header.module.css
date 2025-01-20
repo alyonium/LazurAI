@@ -12,12 +12,11 @@
 
 /* width of max container*/
 .contentWrapper {
-    width: 1440px;
+    width: var(--max-width-lg);
 }
 
 .content {
     padding: var(--space-24);
-    height: calc(90px - var(--space-24) - var(--space-24));
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,7 +27,7 @@
     width: 140px;
 }
 
-.menuWrapper {
+.menuHorizontal {
     display: flex;
     gap: var(--space-24);
 }
@@ -37,4 +36,59 @@
     width: 140px;
     display: flex;
     gap: var(--space-16);
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menuIcon {
+    display: none;
+    cursor: pointer;
+}
+
+/* MD */
+@media (max-width: 1439px) and (min-width: 1024px) {
+
+}
+
+/* SM */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .content {
+        padding: var(--space-24) var(--space-16);
+    }
+
+    .menuHorizontal {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .menuVertical {
+
+    }
+
+    .logoWrapper, .buttonsWrapper {
+        width: 200px;
+    }
+}
+
+
+/* XS */
+@media (max-width: 767px) and (min-width: 320px) {
+    .menuHorizontal {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .menuVertical {
+
+    }
+
+    .logoWrapper, .buttonsWrapper {
+        width: 200px;
+    }
 }

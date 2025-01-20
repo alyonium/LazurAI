@@ -1,5 +1,12 @@
+.moduleWrapper {
+    position: relative;
+    z-index: var(--zindex-content);
+    background: var(--white);
+    border-top: 1px solid var(--25per-blue1000);
+}
+
 .contentWrapper {
-    margin: var(--space-48) 0;
+    padding: var(--space-48) 0;
 }
 
 .content {
@@ -18,4 +25,24 @@
     text-align: center;
     gap: var(--space-16);
     max-width: 690px;
+}
+
+/* MD */
+@media (max-width: 1439px) and (min-width: 1024px) {
+
+}
+
+/* SM */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .textWrapper {
+        gap: var(--space-12);
+    }
+}
+
+/* XS */
+@media (max-width: 767px) and (min-width: 320px) {
+    .moduleWrapper {
+        background: unset;
+        border-top: unset;
+    }
 }

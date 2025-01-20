@@ -26,3 +26,10 @@
     background:  var(--white);
     color: var(--blue1000)
 }
+
+/* SM */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .wrapper {
+        padding: var(--space-4) var(--space-10);
+    }
+}

@@ -9,7 +9,7 @@ const GettingStarted = () => {
   const t = useTranslations('gettingStarted');
 
   return (
-    <div className='module-wrapper'>
+    <div className={classNames('module-wrapper', styles.moduleWrapper)}>
       <div className={classNames('content-wrapper', styles.contentWrapper)}>
         <div className={classNames('content', styles.content)}>
           <div className={styles.textWrapper}>
@@ -17,7 +17,7 @@ const GettingStarted = () => {
             <h2 className='header-main-md text-blue1000'>{t('heading')}</h2>
             <div className='body-lg'>{t('info')}</div>
           </div>
-          <video width='1024' autoPlay muted loop>
+          <video width='100%' autoPlay muted loop>
             <source src='/gettingStartedVideo.mp4' type='video/mp4' />
             Your browser does not support the video tag.
           </video>

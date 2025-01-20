@@ -1,9 +1,11 @@
 :root {
   /* WIDTH */
+  --max-width-lg: 1440px;
+  --max-width-xs: 500px;
+
   --min-width-lg: 1024px;
   --min-width-md: 900px;
   --min-width-sm: 720px;
-  --max-width-xs: 500px;
   --min-width-xs: 280px;
 
   /* SPACES */
@@ -12,11 +14,13 @@
   --space-120: 120px;
   --space-64: 64px;
   --space-48: 48px;
+  --space-40: 40px;
   --space-36: 36px;
   --space-32: 32px;
   --space-24: 24px;
   --space-20: 20px;
   --space-16: 16px;
+  --space-12: 12px;
   --space-10: 10px;
   --space-8: 8px;
   --space-4: 4px;
@@ -28,9 +32,13 @@
   /* FONTS */
 
   --font-size-80: 80px;
+  --font-size-72: 72px;
+  --font-size-40: 40px;
   --font-size-48: 48px;
+  --font-size-36: 36px;
   --font-size-32: 32px;
   --font-size-28: 28px;
+  --font-size-26: 26px;
   --font-size-24: 24px;
   --font-size-20: 20px;
   --font-size-18: 18px;
@@ -38,13 +46,7 @@
   --font-size-14: 14px;
   --font-size-12: 12px;
   --font-size-10: 10px;
-
-  /* light      200 */
-  /* regular    300 */
-  /* medium     400 */
-  /* semibold   500 */
-  /* bold       700 */
-  /* extrabold  800 */
+  --font-size-8: 8px;
 
   --font-weight-regular: 400;
   --font-weight-semibold: 500;
@@ -71,10 +73,12 @@
   --grey200: #F1F1F1;
 
   /* GRADIENTS */
+
   --logo-gradient: linear-gradient(-90deg, var(--blue200) 26%, var(--blue1000) 99%);
   --button-gradient: linear-gradient(to right, var(--blue1000) 0%, var(--blue600) 51%, var(--blue1000) 100%);
 
   /* Z-INDEX */
+
   --zindex-circles: 5000;
   --zindex-background: 10000;
   --zindex-content: 20000;
@@ -90,6 +94,8 @@
 
   --base-transition: 0.5s;
   --long-transition: 2s;
+
+  --header-height: 90px;
 
   /* CIRCLE BACKGROUND */
 
@@ -121,10 +127,11 @@ body * {
 }
 
 .content {
-  width: 1024px;
+  width: var(--min-width-lg);
   z-index: var(--zindex-content);
 }
 
+/* TODO */
 .text-stroked {
   color:  var(--white);
   text-shadow:
@@ -272,9 +279,293 @@ body * {
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-14);
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menu-item-md:hover {
+  color: var(--blue1000);
 }
 
 /* MD */
 @media (max-width: 1439px) and (min-width: 1024px) {
+  .content-wrapper {
+    padding: var(--space-40) 0;
+  }
 
+  .content {
+    width: var(--min-width-md);
+    gap: var(--space-40) 0;
+  }
+
+  .header-main-lg {
+    font-size: var(--font-size-80);
+  }
+
+  .header-main-md {
+    font-size: var(--font-size-40);
+  }
+
+  .header-main-sm {
+    font-size: var(--font-size-20);
+  }
+
+  .header-secondary-md {
+    font-size: var(--font-size-40);
+  }
+
+  .body-xl {
+    font-size: var(--font-size-16);
+  }
+
+  .body-lg {
+    font-size: var(--font-size-14);
+  }
+
+  .body-md {
+    font-size: var(--font-size-12);
+  }
+
+  .body-sm {
+    font-size: var(--font-size-10);
+  }
+
+  .body-xxl-b {
+    font-size: var(--font-size-32);
+  }
+
+  .body-xl-b {
+    font-size: var(--font-size-24);
+  }
+
+  .body-lg-b {
+    font-size: var(--font-size-20);
+  }
+
+  .body-md-b {
+    font-size: var(--font-size-18);
+  }
+
+  .body-sm-b {
+    font-size: var(--font-size-16);
+  }
+
+  .body-xs-b {
+    font-size: var(--font-size-14);
+  }
+
+  .body-xxs-b {
+    font-size: var(--font-size-12);
+  }
+
+  .button-label-lg {
+    font-size: var(--font-size-20);
+  }
+
+  .button-label-md {
+    font-size: var(--font-size-16);
+  }
+
+  .button-label-sm {
+    font-size: var(--font-size-14);
+  }
+
+  .label-lg {
+    font-size: var(--font-size-12);
+  }
+
+  .label-md {
+    font-size: var(--font-size-10);
+  }
+
+  .menu-item-md {
+    font-size: var(--font-size-12);
+  }
+}
+
+/* SM */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .contentWrapper {
+    padding: var(--space-32) 0;
+  }
+
+  .content {
+    width: var(--min-width-sm);
+    gap: var(--space-32) 0;
+  }
+
+  .header-main-lg {
+    font-size: var(--font-size-72);
+  }
+
+  .header-main-md {
+    font-size: var(--font-size-36);
+  }
+
+  .header-main-sm {
+    font-size: var(--font-size-20);
+  }
+
+  .header-secondary-md {
+    font-size: var(--font-size-36);
+  }
+
+  .body-xl {
+    font-size: var(--font-size-16);
+  }
+
+  .body-lg {
+    font-size: var(--font-size-14);
+  }
+
+  .body-md {
+    font-size: var(--font-size-12);
+  }
+
+  .body-sm {
+    font-size: var(--font-size-10);
+  }
+
+  .body-xxl-b {
+    font-size: var(--font-size-28);
+  }
+
+  .body-xl-b {
+    font-size: var(--font-size-24);
+  }
+
+  .body-lg-b {
+    font-size: var(--font-size-20);
+  }
+
+  .body-md-b {
+    font-size: var(--font-size-16);
+  }
+
+  .body-sm-b {
+    font-size: var(--font-size-16);
+  }
+
+  .body-xs-b {
+    font-size: var(--font-size-14);
+  }
+
+  .body-xxs-b {
+    font-size: var(--font-size-10);
+  }
+
+  .button-label-lg {
+    font-size: var(--font-size-18);
+  }
+
+  .button-label-md {
+    font-size: var(--font-size-14);
+  }
+
+  .button-label-sm {
+    font-size: var(--font-size-12);
+  }
+
+  .label-lg {
+    font-size: var(--font-size-10);
+  }
+
+  .label-md {
+    font-size: var(--font-size-8);
+  }
+
+  .menu-item-md {
+    font-size: var(--font-size-14);
+  }
+}
+
+/* XS */
+@media (max-width: 767px) and (min-width: 320px) {
+  .content {
+    width: var(--max-width-xs);
+  }
+
+
+  .header-main-lg {
+    font-size: var(--font-size-72);
+  }
+
+  .header-main-md {
+    font-size: var(--font-size-26);
+  }
+
+  .header-main-sm {
+    font-size: var(--font-size-20);
+  }
+
+  .header-secondary-md {
+    font-size: var(--font-size-24);
+  }
+
+  .body-xl {
+    font-size: var(--font-size-14);
+  }
+
+  .body-lg {
+    font-size: var(--font-size-12);
+  }
+
+  .body-md {
+    font-size: var(--font-size-10);
+  }
+
+  .body-sm {
+    font-size: var(--font-size-10);
+  }
+
+  .body-xxl-b {
+    font-size: var(--font-size-20);
+  }
+
+  .body-xl-b {
+    font-size: var(--font-size-18);
+  }
+
+  .body-lg-b {
+    font-size: var(--font-size-16);
+  }
+
+  .body-md-b {
+    font-size: var(--font-size-14);
+  }
+
+  .body-sm-b {
+    font-size: var(--font-size-14);
+  }
+
+  .body-xs-b {
+    font-size: var(--font-size-12);
+  }
+
+  .body-xxs-b {
+    font-size: var(--font-size-10);
+  }
+
+  .button-label-lg {
+    font-size: var(--font-size-14);
+  }
+
+  .button-label-md {
+    font-size: var(--font-size-12);
+  }
+
+  .button-label-sm {
+    font-size: var(--font-size-14);
+  }
+
+  .label-lg {
+    font-size: var(--font-size-10);
+  }
+
+  .label-md {
+    font-size: var(--font-size-8);
+  }
+
+  .menu-item-md {
+    font-size: var(--font-size-14);
+  }
 }

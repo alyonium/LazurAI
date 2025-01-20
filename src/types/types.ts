@@ -1,3 +1,8 @@
+export const Locale = {
+  es: 'es',
+  en: 'en',
+};
+
 export enum CaruselCardType {
   blue = 'blue',
   transparent = 'transparent',

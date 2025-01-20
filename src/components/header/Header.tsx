@@ -1,9 +1,11 @@
-'use client';
 import styles from './Header.module.css';
 import { useTranslations } from 'next-intl';
 import Button from '@/components/button/Button';
 import { ButtonSize, LogoSize } from '@/types/types';
 import Logo from '@/components/logo/Logo';
+import LangPicker from '@/components/langPicker/LangPicker';
+import Image from 'next/image';
+import menuIcon from '/public/menu.svg';
 
 const Header = () => {
   const t = useTranslations('header');
@@ -15,7 +17,7 @@ const Header = () => {
           <div className={styles.logoWrapper}>
             <Logo size={LogoSize.medium} />
           </div>
-          <div className={styles.menuWrapper}>
+          <div className={styles.menuHorizontal}>
             <span className='menu-item-md'>{t('gettingStarted')}</span>
             <span className='menu-item-md'>{t('models')}</span>
             <span className='menu-item-md'>{t('features')}</span>
@@ -25,7 +27,15 @@ const Header = () => {
             <span className='menu-item-md'>{t('contacts')}</span>
           </div>
           <div className={styles.buttonsWrapper}>
-            <Button text='Log In' size={ButtonSize.small} />
+            <LangPicker />
+            <Button text={t('button')} size={ButtonSize.small} />
+            <div className={styles.menuIcon}>
+              <Image
+                alt='burger menu icon'
+                src={menuIcon}
+                className={styles.menuIcon}
+              />
+            </div>
           </div>
         </div>
       </div>

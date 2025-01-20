@@ -25,6 +25,9 @@ const Card = ({ text, image }: CardProps) => {
 const Circle = () => {
   return (
     <div className={styles.void}>
+      <div className={styles.lastCircleShadow} />
+      <div className={styles.lastCircle} />
+      <div className={styles.secondCircle} />
       <ul
         className={styles.cardList}
         style={{ '--count': 6 } as React.CSSProperties}
@@ -36,9 +39,6 @@ const Circle = () => {
         <Card text='gpt-4o' image={openaiLogo} />
         <Card text='Amazon Nova' image={amazonNovaLogo} />
       </ul>
-      <div className={styles.lastCircleShadow} />
-      <div className={styles.lastCircle} />
-      <div className={styles.secondCircle} />
     </div>
   );
 };
