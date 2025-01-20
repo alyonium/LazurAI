@@ -8,8 +8,7 @@
 
   /* SPACES */
 
-  --space-250: 250px;
-  --space-200: 200px;
+  --space-300: 300px;
   --space-120: 120px;
   --space-64: 64px;
   --space-48: 48px;
@@ -53,6 +52,8 @@
 
   /* COLORS */
 
+  --white: #f8faff;
+
   --25per-white: rgba(255, 255, 255, 0.25);
   --25per-black: rgba(0, 0, 0, 0.25);
   --25per-blue1000: rgba(15, 98, 254, 0.25);
@@ -82,6 +83,7 @@
   /* OTHER */
 
   --border-radius-circle: 50%;
+  --border-radius-xl: 30px;
   --border-radius-lg: 10px;
   --border-radius-md: 8px;
   --border-radius-sm: 6px;
@@ -105,6 +107,7 @@ body, h1, h2, h3 {
 
 body {
   overflow-x: hidden;
+  background: var(--white);
 }
 
 body * {
@@ -123,7 +126,7 @@ body * {
 }
 
 .text-stroked {
-  color: white;
+  color:  var(--white);
   text-shadow:
           -1px -1px 0 var(--blue1000),
           1px -1px 0 var(--blue1000),
@@ -138,7 +141,7 @@ body * {
 }
 
 .text-white {
-  color: white;
+  color: var(--white);
 }
 
 .header-main-lg,

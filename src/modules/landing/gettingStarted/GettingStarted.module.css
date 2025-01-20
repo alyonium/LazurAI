@@ -1,0 +1,21 @@
+.contentWrapper {
+    margin: var(--space-48) 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-48);
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--space-16);
+    max-width: 690px;
+}

@@ -14,3 +14,10 @@ export enum LogoSize {
   large = 'lg',
   medium = 'md',
 }
+
+export enum ChipType {
+  filled = 'filled',
+  bordered = 'bordered',
+  default = 'default',
+  white = 'white',
+}

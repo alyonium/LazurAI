@@ -1,0 +1,28 @@
+.wrapper {
+    padding: var(--space-4) var(--space-16);
+    border-radius: var(--border-radius-xl);
+    width: fit-content;
+}
+
+.filled {
+    border: 1px solid var(--grey200);
+    background: var(--button-gradient);
+    color:  var(--white);
+}
+
+.bordered {
+    border: 1px solid var(--grey400);
+    color: var(--grey1000);
+}
+
+.default {
+    border: 1px solid var(--grey400);
+    background: var(--grey200);
+    color: var(--grey1000);
+}
+
+.white {
+    border: 1px solid var(--blue1000);
+    background:  var(--white);
+    color: var(--blue1000)
+}

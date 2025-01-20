@@ -6,7 +6,7 @@
 /* something wrong with height & width here*/
 .imageWrapper {
     border-radius: var(--border-radius-circle);
-    background: white;
+    background:  var(--white);
     box-shadow: 0 0 13px var(--25per-blue1000);
     display: flex;
     align-items: center;
@@ -59,9 +59,10 @@
 }
 
 .whiteTextWrapper {
-    background: white;
+    background: var(--white);
     padding: var(--space-16) var(--space-32);
     box-shadow: 0 0 20px var(--25per-black);
+    /* TODO */
     /* actual (width/height) minus (right and left padding/top and bottom padding) */
     height: calc(70px - var(--space-16) - var(--space-16));
     width: calc(180px - var(--space-32) - var(--space-32));

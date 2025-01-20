@@ -16,6 +16,12 @@
     "endlessPossibilities": "Endless possibilities",
     "getAllAiTools": "Get all the AI tools you need and <bold>save over $600</bold> every year."
   },
+  "gettingStarted": {
+    "chip": "getting started",
+    "heading": "How does it work?",
+    "info": "With a single subscription, you get access to multiple powerful AI assistants at a much lower cost than individual subscriptions. Choose your assistant, send your request, and receive instant responses — all in one simple platform.",
+    "button": "Get Started"
+  },
   "Metadata": {
     "title": "LazurAI",
     "description": "AI multitool",

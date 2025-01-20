@@ -8,16 +8,15 @@
 
 .halfBlock {
     position: absolute;
-    backdrop-filter: blur(36px);
     width: 50vw;
     height: 100%;
     border-right: 1px solid var(--25per-blue1000);
-    background: var(--25per-white);
+    background: var(--white);
     z-index: var(--zindex-background);
 }
 
 .contentWrapper {
-
+    height: 1025px;
 }
 
 .centerCircle {
@@ -28,7 +27,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: var(--white);
     box-shadow: var(--circle-box-shadow);
     border-radius: 50%;
     display: flex;
@@ -54,10 +53,10 @@
 .content {
     height: 100%;
     margin-top: var(--space-120);
+    margin-bottom: var(--space-300);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: var(--space-250);
 }
 
 .headingWrapper {

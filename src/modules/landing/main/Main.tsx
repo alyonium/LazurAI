@@ -30,12 +30,12 @@ const Main = () => {
       <div className={classNames('content-wrapper', styles.contentWrapper)}>
         <div className={classNames('content', styles.content)}>
           <div className={styles.headingWrapper}>
-            <div className='text-stroked header-main-md'>
+            <h1 className='text-stroked header-main-md'>
               {t('oneSubscription')}
-            </div>
-            <div className='text-blue1000 header-main-md'>
+            </h1>
+            <h1 className='text-blue1000 header-main-md'>
               {t('endlessPossibilities')}
-            </div>
+            </h1>
           </div>
 
           <div className={styles.infoWrapper}>

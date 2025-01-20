@@ -4,23 +4,24 @@
     transition: var(--base-transition);
     text-align: center;
     background-size: 200% auto;
-    color: white;
+    color:  var(--white);
 }
 
 .lg {
     border-radius: var(--border-radius-lg);
     padding: var(--space-16) var(--space-32);
-    max-width: calc(180px - (2 * var(--space-32)));
+    width: fit-content;
 }
 
 .md {
     border-radius: var(--border-radius-lg);
+    width: fit-content;
 }
 
 .sm {
     border-radius: var(--border-radius-lg);
     padding: var(--space-10) var(--space-20);
-    max-width: calc(180px - (2 * var(--space-32)));
+    width: fit-content;
 }
 
 .wrapper:hover {

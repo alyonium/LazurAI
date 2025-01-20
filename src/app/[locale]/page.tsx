@@ -1,5 +1,6 @@
 import Header from '@/components/header/Header';
 import Main from '@/modules/landing/main/Main';
+import GettingStarted from '@/modules/landing/gettingStarted/GettingStarted';
 import {
   dehydrate,
   HydrationBoundary,
@@ -13,6 +14,7 @@ const Home = async (props: { params: { locale: string } }) => {
     <HydrationBoundary state={dehydrate(queryClient)}>
       <Header />
       <Main />
+      <GettingStarted />
     </HydrationBoundary>
   );
 };

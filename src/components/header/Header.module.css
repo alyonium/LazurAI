@@ -1,7 +1,7 @@
 /* full width of screen */
 .moduleWrapper {
     border-bottom: 1px solid var(--25per-blue1000);
-    background-color: white;
+    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
